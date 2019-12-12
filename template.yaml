@@ -4,7 +4,7 @@ Resources:
     gateway:
       Properties:
         CodeUri: ./
-        Description: This is a gin serverless tempalte
+        Description: This is a template using gin for tencent serverless
         Environment:
           Variables:
             mode: release
