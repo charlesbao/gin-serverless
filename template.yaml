@@ -7,7 +7,7 @@ Resources:
         Description: This is a gin serverless tempalte
         Environment:
           Variables:
-            MODE: release
+            mode: release
         Handler: main
         MemorySize: 128
         Timeout: 3
