@@ -1,0 +1,19 @@
+Resources:
+  default:
+    Type: 'TencentCloud::Serverless::Namespace'
+    gateway:
+      Properties:
+        CodeUri: ./
+        Description: This is a gin serverless tempalte
+        Environment:
+          Variables:
+            MODE: release
+        Handler: main
+        MemorySize: 128
+        Timeout: 3
+        Role: QCS_SCFExcuteRole
+        Runtime: Go1
+      Type: 'TencentCloud::Serverless::Function'
+Globals:
+  Function:
+    Timeout: 10
